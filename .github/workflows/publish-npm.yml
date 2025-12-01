@@ -6,6 +6,10 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write        # Required for pushing tags/commits
+      issues: write          # Optional, if you use issue-based release notes
+      pull-requests: write   # Optional, if your config uses PRs
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} //it's generated automatically
       NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
