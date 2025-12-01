@@ -1,6 +1,6 @@
 {
   "name": "@ds4sscc/node-odrl",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "ODRL Policy typings. [WIP]",
   "main": "./dist/index.es.js",
   "module": "./dist/index.es.js",
